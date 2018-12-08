@@ -1,5 +1,5 @@
 function [d] = grad(x)
-%gradient: calculate gradient of x, same as MATLAB gradient
+%grad: calculate gradient of x, same as MATLAB gradient
 %Intput:
 %   x = data x
 %Output:
