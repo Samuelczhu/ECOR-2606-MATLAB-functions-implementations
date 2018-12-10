@@ -9,7 +9,7 @@ function [x,y] = heuns(f,x,y0,dis)
 %   x = the x vector, same as input
 %   y = the solution y vector corresponding to x vector
 
-if nargin<dis %check for input
+if nargin<4 %check for input
     dis = 0; %default dis is false
 end
 
