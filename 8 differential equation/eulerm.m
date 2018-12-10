@@ -14,7 +14,7 @@ if nargin<4 %input less than 4
 end
 
 if dis %show table
-    fprintf('i\txi\tyi\tslope\n'); %print the header
+    fprintf('i\t  xi\t  yi\t  slope\n'); %print the header
 end
 
 n=length(x); %get the length
@@ -24,7 +24,7 @@ h = x(2)-x(1); %find the step
 for i=1:n %loop through x
     slope = f(x(i),y(i));
     if dis %if display
-        fprintf('%d\t%f\t%f\t%f',i-1,x(i),y(i),slope);
+        fprintf('%d\t%6.3f\t%6.3f\t%6.3f\n',i-1,x(i),y(i),slope);
     end
     if i~=n %not the last loop
         y(i+1) = y(i) + slope*h; %calculate the next y
